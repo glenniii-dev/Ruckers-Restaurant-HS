@@ -1,0 +1,64 @@
+/*Navigation Bar*/
+
+ul.bar {list-style-type: none; margin: 0; padding: 0; 
+overflow: hidden; background-color: #ff0000;}
+
+li.bar a {display: block; color: white; text-align: center; 
+padding: 14px 16px; text-decoration: none;}
+
+li.bar {float: left;}
+
+li.bar a:hover {background-color: #111111;}
+
+strong {float: right; color: white;}
+
+/*Page Top*/
+
+h1 {text-align: center; color: #ff0000; 
+	font-family: Arial, Helvetica, sans-serif; font-size: 200%;}
+	
+h2 {color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+
+h3 {color: white; text-align: left; font-family: Arial, Helvetica, sans-serif; text-size: 150%;}
+
+h4 {font-weight: normal; color: white; text-align: left; font-family: Arial, Helvetica, sans-serif; text-size: 125%;}
+
+p {color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+
+em {font-size: 75%;}
+
+/*Phone Number Formatting*/
+
+strong {float: right; color: white;}
+
+/*Forms*/
+
+fieldset.reservation {color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;
+display: inline; vertical-align: top; height: 654px; width: 900px;}
+
+fieldset.oo {color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+
+fieldset.gift {color: white; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+
+/*Menu Table*/
+
+table, th, td {border: 1px solid #ff0000; border-collapse: collapse; padding: 20px;
+text-align: center; margin: auto;}
+
+th, td {background-color: white;}
+
+img.gallery {display: inline; text-align: center;}
+
+/*Link To Menu*/
+
+b a {color: #ff0000; text-transform: uppercase; text-decoration: none;}
+
+/*Rucker's Focus List*/
+
+ol {list-style-type: upper-roman; color: white; font-family: Arial, Helvetica, sans-serif;}
+
+li.list {color: white; font-family: Arial, Helvetica, sans-serif;}
+
+/*Gift Card Image*/
+
+img.card {display: block; text-align: center; margin: auto; width: 25%}

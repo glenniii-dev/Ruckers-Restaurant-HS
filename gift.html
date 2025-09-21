@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ruckers Restaurant Gift Cards</title>
+		<link href="Ruckers-Restaurant.css" 
+		type="text/css" rel="stylesheet" />
+	</head>
+	<header>
+<!-- Navigation Bar -->
+		<nav>
+		<ul class="bar">
+			<li class="bar"><a href="home.html">Home</a></li>
+			<li class="bar"><a href="menu.html">Menu</a></li>
+			<li class="bar"><a href="about.html">About Us</a></li>
+			<li class="bar"><a href="order.html">Order</a></li>
+			<li class="bar"><a href="" class="current">Gift Cards</a></li>
+			<li class="bar"><a href="mailto:staff@ruckers.com">Contact Us</a></li>
+		</ul>
+		</nav>
+	</header>
+<!-- Background Image -->
+	<style>
+	body {background-image: url("images-rr/gift-background.jpg");
+	background-repeat: no-repeat; background-size: cover;
+	background-blend-mode: overlay;}
+	</style>
+<!-- Body -->
+	<body>
+		<h1>Rucker's Restaurant Gift Cards</h1>
+<!-- Purchase A Gift Card Form -->
+	<fieldset class="gift">
+		<legend><b>Purchase A Gift Card:</b></legend>
+		<label><b>Name:</b></label><br />
+		<input type="text" /><br /><br />
+		<label><b>Address:</b></label><br />
+		<textarea name="address"></textarea><br /><br />
+		<label><b>Credit Card Number:</b></label><br />
+		<input type="text" /><br /><br />
+		<label><b>Credit Card Experation:</b></label><br />
+		<input type="date" name="credit card experation date" /><br /><br />
+		<label><b>CSV:</b></label><br />
+		<input type="password" name="csv" /><br /><br />
+		<label>Amount:</label><br />
+		<input type="radio" value="$5" name="amount" />$5
+		<input type="radio" value="$10" name="amount" />$10
+		<input type="radio" value="$15" name="amount" />$15
+		<input type="radio" value="$20" name="amount" />$20
+		<input type="radio" value="$25" name="amount" />$25
+		<input type="radio" value="$50" name="amount" />$50<br /><br />
+		<label>Purchase Gift Card:</label>
+		<input type="submit" name="confirm purchase" value="Confirm Purchase" /><br /><br />
+<!-- Gift Card Image -->
+		<img src="images-rr/gift-card.jpg" class="card" alt="Image of Ruckers Restaurant Gift Card.">
+	</fieldset>
+	</body>
+</html>

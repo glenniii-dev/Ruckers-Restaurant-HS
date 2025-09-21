@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ruckers Restaurant Order</title>
+		<link href="Ruckers-Restaurant.css" 
+		type="text/css" rel="stylesheet" />
+	</head>
+	<header>
+<!-- Navigation Bar -->
+		<nav>
+		<ul class="bar">
+			<li class="bar"><a href="home.html">Home</a></li>
+			<li class="bar"><a href="menu.html">Menu</a></li>
+			<li class="bar"><a href="about.html">About Us</a></li>
+			<li class="bar"><a href="" class="current">Order</a></li>
+			<li class="bar"><a href="gift.html">Gift Cards</a></li>
+			<li class="bar"><a href="mailto:staff@ruckers.com">Contact Us</a></li>
+		</ul>
+		</nav>
+	</header>
+<!-- Background Image -->
+	<style>
+	body {background-image: url("images-rr/order-background.jpg");
+	background-repeat: no-repeat; background-size: cover;
+	background-blend-mode: overlay;}
+	</style>
+<!-- Allow Multiple Food Orders -->
+	<style>
+	.popup {display: none;}
+	.toggle:checked ~ .popup {display: block;}
+	</style>
+	<body>
+		<h1>Rucker's Restaurant Online Order Form</h1>
+		<h2>Just want to pickup Rucker's? Fill out our online order 
+		form and pick it up!</h2>
+<!-- Online Order Form: Name/Phone/Email/Credit Card -->
+	<fieldset class="oo">
+		<legend><b>Order Online:</b></legend><br />
+		<label><b>First Name:</b></label><br />
+		<input type="text" name="first name" /><br /><br />
+		<label><b>Last Name:</b></label><br />
+		<input type="text" name="last name" /><br /><br />
+		<label><b>Phone Number:</b></label><br />
+		<input type="text" name="phone number" /><br /><br />
+		<label><b>Email:</b></label><br />
+		<input type="text" name="email" /><br /><br />
+		<label><b>Credit Card Number:</b></label><br />
+		<textarea name="credit card number"></textarea><br /><br />
+		<label><b>Credit Card Experation:</b></label><br />
+		<input type="date" name="credit card experation date" /><br /><br />
+		<label><b>CSV:</b></label><br />
+		<input type="password" name="csv" /><br /><br />
+<!-- Online Order Form: Pickup Time -->	
+	<label for="time-select">Select a pickup time:</label>
+    <select id="time-select">
+        <option value="12:00 PM">12:00 PM</option>
+        <option value="12:30 PM">12:30 PM</option>
+        <option value="01:00 PM">01:00 PM</option>
+        <option value="01:30 PM">01:30 PM</option>
+        <option value="02:00 PM">02:00 PM</option>
+        <option value="02:30 PM">02:30 PM</option>
+        <option value="03:00 PM">03:00 PM</option>
+        <option value="03:30 PM">03:30 PM</option>
+        <option value="04:00 PM">04:00 PM</option>
+        <option value="04:30 PM">04:30 PM</option>
+        <option value="05:00 PM">05:00 PM</option>
+        <option value="05:30 PM">05:30 PM</option>
+        <option value="06:00 PM">06:00 PM</option>
+		<option value="06:30 PM">06:30 PM</option>
+        <option value="07:00 PM">07:00 PM</option>
+        <option value="07:30 PM">07:30 PM</option>
+        <option value="08:00 PM">08:00 PM</option>
+    </select>
+	<hr />
+<!-- Food Orders -->
+	<h2>Food Order 1</h2>
+	<em>For prices checkout the menu:</em> <b><a href="menu.html">Menu</a></b><br /><br />
+		<label>Select a beverage:</label><br />
+		<input type="radio" name="beverage" value="water" />Water
+		<input type="radio" name="beverage" value="iced tea" />Iced Tea
+		<input type="radio" name="beverage" value="beer" />Beer
+		<input type="radio" name="beverage" value="wine" />Wine<br /><br />
+	<label>Select a Steak Dinner or Meal:</label><br />
+	<select>
+		<option value="Porterhouse Steak Dinner">Porterhouse Steak Dinner</option>
+		<option value="Sirloin Steak Dinner">Sirloin Steak Dinner</option>
+		<option value="Ribeye Steak Dinner">Ribeye Steak Dinner</option>
+		<option value="T-bone Steak Dinner">T-bone Steak Dinner</option>
+		<option value="Baked Chicken Dinner">Baked Chicken Dinner</option>
+		<option value="Fillet Fish Dinner">Fillet Fish Dinner</option>
+		<option value="Garden Salad">Garden Salad</option>
+		<option value="Steakhouse Salad">Steakhouse Salad</option>
+	</select><br /><br />
+		<label>Select a Desert:</label><br />
+		<input type="radio" name="desert" value="ice cream" />Ice Cream
+		<input type="radio" name="desert" value="caramel mousse cake" />Caramel Mousse Cake
+		<input type="radio" name="desert" value="cheesecake" />Cheesecake
+		<input type="radio" name="desert" value="apple pie" />Apple Pie<br /><br />
+<!-- Another Order Popup #1 -->
+		<label>Add another food order:</label>
+		<input type="checkbox" value="checkbox" name="checkbox" class="toggle" />Confirm<br /><br />
+	<label>Submit Your Order:</label>
+	<input type="submit" name="submit order" />
+	<div class="popup">
+	<hr />
+	<h2>Food Order 2</h2><br />
+		<label>Select a beverage:</label><br />
+		<input type="radio" name="beverage" value="water" />Water
+		<input type="radio" name="beverage" value="iced tea" />Iced Tea
+		<input type="radio" name="beverage" value="beer" />Beer
+		<input type="radio" name="beverage" value="wine" />Wine<br /><br />
+	<label>Select a Steak Dinner or Meal:</label><br />
+	<select>
+		<option value="Porterhouse Steak Dinner">Porterhouse Steak Dinner</option>
+		<option value="Sirloin Steak Dinner">Sirloin Steak Dinner</option>
+		<option value="Ribeye Steak Dinner">Ribeye Steak Dinner</option>
+		<option value="T-bone Steak Dinner">T-bone Steak Dinner</option>
+		<option value="Baked Chicken Dinner">Baked Chicken Dinner</option>
+		<option value="Fillet Fish Dinner">Fillet Fish Dinner</option>
+		<option value="Garden Salad">Garden Salad</option>
+		<option value="Steakhouse Salad">Steakhouse Salad</option>
+	</select><br /><br />
+		<label>Select a Desert:</label><br />
+		<input type="radio" name="desert" value="ice cream" />Ice Cream
+		<input type="radio" name="desert" value="caramel mousse cake" />Caramel Mousse Cake
+		<input type="radio" name="desert" value="cheesecake" />Cheesecake
+		<input type="radio" name="desert" value="apple pie" />Apple Pie<br /><br />
+<!-- Another Order Popup #2 -->
+		<label>Add another food order:</label>
+		<input type="checkbox" value="checkbox" name="checkbox" class="toggle" />Confirm<br /><br />
+	<label>Submit Your Order:</label>
+	<input type="submit" name="submit order" />
+	<div class="popup">
+	<hr />
+	<h2>Food Order 3</h2><br />
+		<label>Select a beverage:</label><br />
+		<input type="radio" name="beverage" value="water" />Water
+		<input type="radio" name="beverage" value="iced tea" />Iced Tea
+		<input type="radio" name="beverage" value="beer" />Beer
+		<input type="radio" name="beverage" value="wine" />Wine<br /><br />
+	<label>Select a Steak Dinner or Meal:</label><br />
+	<select>
+		<option value="Porterhouse Steak Dinner">Porterhouse Steak Dinner</option>
+		<option value="Sirloin Steak Dinner">Sirloin Steak Dinner</option>
+		<option value="Ribeye Steak Dinner">Ribeye Steak Dinner</option>
+		<option value="T-bone Steak Dinner">T-bone Steak Dinner</option>
+		<option value="Baked Chicken Dinner">Baked Chicken Dinner</option>
+		<option value="Fillet Fish Dinner">Fillet Fish Dinner</option>
+		<option value="Garden Salad">Garden Salad</option>
+		<option value="Steakhouse Salad">Steakhouse Salad</option>
+	</select><br /><br />
+		<label>Select a Desert:</label><br />
+		<input type="radio" name="desert" value="ice cream" />Ice Cream
+		<input type="radio" name="desert" value="caramel mousse cake" />Caramel Mousse Cake
+		<input type="radio" name="desert" value="cheesecake" />Cheesecake
+		<input type="radio" name="desert" value="apple pie" />Apple Pie<br /><br />
+<!-- Another Order Popup #3 -->
+		<label>Add another food order:</label>
+		<input type="checkbox" value="checkbox" name="checkbox" class="toggle" />Confirm<br /><br />
+	<label>Submit Your Order:</label>
+	<input type="submit" name="submit order" />
+	<div class="popup">
+	<hr />
+	<h2>Food Order 4</h2><br />
+		<label>Select a beverage:</label><br />
+		<input type="radio" name="beverage" value="water" />Water
+		<input type="radio" name="beverage" value="iced tea" />Iced Tea
+		<input type="radio" name="beverage" value="beer" />Beer
+		<input type="radio" name="beverage" value="wine" />Wine<br /><br />
+	<label>Select a Steak Dinner or Meal:</label><br />
+	<select>
+		<option value="Porterhouse Steak Dinner">Porterhouse Steak Dinner</option>
+		<option value="Sirloin Steak Dinner">Sirloin Steak Dinner</option>
+		<option value="Ribeye Steak Dinner">Ribeye Steak Dinner</option>
+		<option value="T-bone Steak Dinner">T-bone Steak Dinner</option>
+		<option value="Baked Chicken Dinner">Baked Chicken Dinner</option>
+		<option value="Fillet Fish Dinner">Fillet Fish Dinner</option>
+		<option value="Garden Salad">Garden Salad</option>
+		<option value="Steakhouse Salad">Steakhouse Salad</option>
+	</select><br /><br />
+		<label>Select a Desert:</label><br />
+		<input type="radio" name="desert" value="ice cream" />Ice Cream
+		<input type="radio" name="desert" value="caramel mousse cake" />Caramel Mousse Cake
+		<input type="radio" name="desert" value="cheesecake" />Cheesecake
+		<input type="radio" name="desert" value="apple pie" />Apple Pie<br /><br />
+<!-- Another Order Popup #4 -->
+		<label>Add another food order:</label>
+		<input type="checkbox" value="checkbox" name="checkbox" class="toggle" />Confirm<br /><br />
+	<label>Submit Your Order:</label>
+	<input type="submit" name="submit order" />
+	<div class="popup">
+	<hr />
+	<h2>Food Order 5</h2><br />
+		<label>Select a beverage:</label><br />
+		<input type="radio" name="beverage" value="water" />Water
+		<input type="radio" name="beverage" value="iced tea" />Iced Tea
+		<input type="radio" name="beverage" value="beer" />Beer
+		<input type="radio" name="beverage" value="wine" />Wine<br /><br />
+	<label>Select a Steak Dinner or Meal:</label><br />
+	<select>
+		<option value="Porterhouse Steak Dinner">Porterhouse Steak Dinner</option>
+		<option value="Sirloin Steak Dinner">Sirloin Steak Dinner</option>
+		<option value="Ribeye Steak Dinner">Ribeye Steak Dinner</option>
+		<option value="T-bone Steak Dinner">T-bone Steak Dinner</option>
+		<option value="Baked Chicken Dinner">Baked Chicken Dinner</option>
+		<option value="Fillet Fish Dinner">Fillet Fish Dinner</option>
+		<option value="Garden Salad">Garden Salad</option>
+		<option value="Steakhouse Salad">Steakhouse Salad</option>
+	</select><br /><br />
+		<label>Select a Desert:</label><br />
+		<input type="radio" name="desert" value="ice cream" />Ice Cream
+		<input type="radio" name="desert" value="caramel mousse cake" />Caramel Mousse Cake
+		<input type="radio" name="desert" value="cheesecake" />Cheesecake
+		<input type="radio" name="desert" value="apple pie" />Apple Pie<br /><br />
+<!-- Another Order Popup #5 -->
+		<label>Add another food order:</label>
+		<input type="checkbox" value="checkbox" name="checkbox" class="toggle" />Confirm<br /><br />
+	<label>Submit Your Order:</label>
+	<input type="submit" name="submit order" />
+	<div class="popup">
+	<hr />
+	<h2>Food Order 6</h2><br />
+		<label>Select a beverage:</label><br />
+		<input type="radio" name="beverage" value="water" />Water
+		<input type="radio" name="beverage" value="iced tea" />Iced Tea
+		<input type="radio" name="beverage" value="beer" />Beer
+		<input type="radio" name="beverage" value="wine" />Wine<br /><br />
+	<label>Select a Steak Dinner or Meal:</label><br />
+	<select>
+		<option value="Porterhouse Steak Dinner">Porterhouse Steak Dinner</option>
+		<option value="Sirloin Steak Dinner">Sirloin Steak Dinner</option>
+		<option value="Ribeye Steak Dinner">Ribeye Steak Dinner</option>
+		<option value="T-bone Steak Dinner">T-bone Steak Dinner</option>
+		<option value="Baked Chicken Dinner">Baked Chicken Dinner</option>
+		<option value="Fillet Fish Dinner">Fillet Fish Dinner</option>
+		<option value="Garden Salad">Garden Salad</option>
+		<option value="Steakhouse Salad">Steakhouse Salad</option>
+	</select><br /><br />
+		<label>Select a Desert:</label><br />
+		<input type="radio" name="desert" value="ice cream" />Ice Cream
+		<input type="radio" name="desert" value="caramel mousse cake" />Caramel Mousse Cake
+		<input type="radio" name="desert" value="cheesecake" />Cheesecake
+		<input type="radio" name="desert" value="apple pie" />Apple Pie<br /><br />
+	<label>Submit Your Order:</label>
+	<input type="submit" name="submit order" />
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</fieldset>
+	</body>	
+</html>
